@@ -1,4 +1,4 @@
-# name-gender-prediction-ml
+# Indonesian name-gender-prediction-ml
 Machine Learning Gender Prediction by Name
 
 Indonesia Gender prediction using name as feature. The names trained are Indonesian names. The training data is retrieved from KPU, this data consists of names of voter and its gender.
@@ -36,3 +36,25 @@ optional arguments:
                         Output filename for batch prediction
 
 ```
+Predict gender for a name
+
+```
+python gender-predictor.py -ml LG -n "Miftahul Huda"
+Gender prediction using  Logistic Regression .
+Miftahul Huda  :  Male
+
+```
+Predict gender using batch
+
+```
+python gender-predictor.py -ml LG -i ./data/voters.DKIJAKARTA.JAKARTASELATAN.PANCORAN.CIKOKO.1.csv -o ./data/output_test.csv
+```
+Retrain the model and predict
+```
+python gender-predictor.py -ml LG -t ./data/data-pemilih-kpu.csv -f "name" -p "gender"  -n "Amanda Husein"
+Accuracy : 93.51351351351352 %
+Gender prediction using  Logistic Regression .
+Amanda Husein  :  Female
+
+```
+
