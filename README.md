@@ -11,19 +11,28 @@ This program accepts name from command line parameter and names batch in CSV fil
 
 ```
 
-python jenis-kelamin.py -h
-usage: jenis-kelamin.py [-h] [-ml {NB,LG,RF}] [-t TRAIN] nama
+python gender-predictor.py -h
+usage: gender-predictor.py [-h] [-ml {NB,LG,RF}] [-t TRAIN] name
 
-Menentukan jenis kelamin berdasarkan nama Bahasa Indoensia
+Gender prediction by Indonesian name
 
 positional arguments:
-  nama                  Nama
+  name                  Name to predict
 
 optional arguments:
   -h, --help            show this help message and exit
+  -n nama, --name nama  The name to predict
   -ml {NB,LG,RF}        NB=Naive Bayes(default); LG=Logistic Regression;
                         RF=Random Forest
   -t TRAIN, --train TRAIN
-                        Training ulang dengan dataset yang ditentukan
+                        Retrain using specific dataset
+  -f FEATURE, --feature FEATURE
+                        Feature column names for prediction
+  -p PREDICT, --predict PREDICT
+                        Predicted class names for prediction
+  -i INPUT, --input INPUT
+                        Input filename for batch prediction
+  -o OUTPUT, --output OUTPUT
+                        Output filename for batch prediction
 
 ```
