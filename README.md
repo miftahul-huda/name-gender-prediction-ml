@@ -7,6 +7,13 @@ This python program uses Scikit-Learn library for learning pipeline. It provides
 
 This program accepts name from command line parameter and names batch in CSV file.
 
+# Setup the environment
+Clone this repository git clone git@github.com:miftahul-huda/name-gender-prediction-ml.git
+Open project directory : cd name-gender-prediction-ml
+Create Python virtual environment : python3 -m venv venv
+Activate the virtual environment : source venv/bin/activate
+Install dependency : pip3 install -r requirements.txt
+
 # Run the program
 
 ```
