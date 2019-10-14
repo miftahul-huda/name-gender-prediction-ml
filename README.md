@@ -5,4 +5,21 @@ Indonesia Gender prediction using name as feature. The names trained are Indones
 
 This python program uses Scikit-Learn library for learning pipeline. It provides 3 machine learning algoriothm options (Naive Bays, Logistic Regresion, Random Forest).
 
-This program accepts name from command line parameter and name batch in CSV file.
+This program accepts name from command line parameter and names batch in CSV file.
+
+# Run the program
+
+python jenis-kelamin.py -h
+usage: jenis-kelamin.py [-h] [-ml {NB,LG,RF}] [-t TRAIN] nama
+
+Menentukan jenis kelamin berdasarkan nama Bahasa Indoensia
+
+positional arguments:
+  nama                  Nama
+
+optional arguments:
+  -h, --help            show this help message and exit
+  -ml {NB,LG,RF}        NB=Naive Bayes(default); LG=Logistic Regression;
+                        RF=Random Forest
+  -t TRAIN, --train TRAIN
+                        Training ulang dengan dataset yang ditentukan
