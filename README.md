@@ -9,6 +9,8 @@ This program accepts name from command line parameter and names batch in CSV fil
 
 # Run the program
 
+```
+
 python jenis-kelamin.py -h
 usage: jenis-kelamin.py [-h] [-ml {NB,LG,RF}] [-t TRAIN] nama
 
@@ -23,3 +25,5 @@ optional arguments:
                         RF=Random Forest
   -t TRAIN, --train TRAIN
                         Training ulang dengan dataset yang ditentukan
+
+```
